@@ -60,10 +60,13 @@ The app interface is comprised of two main components, a project menu and map:
   <img src="img/interface.png" width="800">
 </p>
 
-The menu lists project data obtained from CO2.storage. When the app loads, it queries CO2.Storage for project assets created with the ForestWatch template. Details such as name, description, registry, and project hectares are included for each project. Clicking a project card will select it and center the map on the project's geographic boundary polygon. 
+The menu lists project data obtained from CO2.storage. When the app loads, it queries CO2.Storage for project assets created with the ForestWatch template. Details such as name, description, registry, and project hectares are included for each project. 
 
-The map displays all the geographic boundary polygons for the listed projects. It includes controls for panning, zooming, and controlling satellite image layers. Clicking any polygon will center the map on it, and scroll the menu to select the corresponding project. 
+The map displays all the geographic boundary polygons for the listed projects. It includes controls for panning, zooming, measuring acreage, and controlling satellite image layers. 
 
+Projects can be explored by either clicking a menu item or map polygon. This will scoll the menu to highlight selected project's details, and center the map on the corresponding boundary polygon.
+
+Select buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. 
 
 
 

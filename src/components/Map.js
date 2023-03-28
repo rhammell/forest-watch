@@ -68,7 +68,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
       layer: layerName,
       tilematrixSet: "PopularWebMercator512",
       format: "image/jpeg",
-      maxcc: 0,
+      maxcc: 20,
       time: layerTime,
       updateWhenIdle: true,
       updateWhenZooming: false
@@ -151,7 +151,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
 
   // Tile layer options change effect
   useEffect(() => {
-    //addLayer();
+    addLayer();
   }, [layerName, layerTime])
 
   // Effect called each time products are updated
