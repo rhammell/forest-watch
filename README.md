@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Forest-Watch
+Forest-watch is a web app that allows users to monitor forest-related carbon offset projects using satellite imagery.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app displays the details and geographic outlines of various afforestation, reforestation, and revegetation projects within a map interface. Users can overlay historic satellite imagery on the map to inspect how the land-cover has changed through time, and verify that a project's stated goals are being accomplished.
 
-## Available Scripts
+Projects data used by the app are stored as assets on co2.storage and conform to a ForestWatch template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to c02.storage. 
 
-In the project directory, you can run:
+## Setup
+Node.js is required to run this application. Begin by cloning this repository and installing the required Node packages: 
 
-### `npm start`
+```bash
+# Clone this repository
+git clone https://github.com/rhammell/forest-watch.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Navigate into the repository
+cd nft-me
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Install required node packages
+npm install
+```
 
-### `npm test`
+## Configuration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Developer specific settings are required for interacting with co2.storage, IPFS, and imagery providers. These settings must be defined as environment variables within an `.env` file in the root directory.
 
-### `npm run build`
+Copy the included `.env.example` template file as `.env`: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Copy environment variables template
+cp .env.example .env
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Update the `.env` file by replacing the default variable values with your unique developer values. The required variables are described below: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Variable                          | Description                                                                       |
+|-----------------------------------|-----------------------------------------------------------------------------------|
+| ESTUARY_API_KEY            | Estuary API Key. Available within [co2.storage](https://co2.storage/) account.           |
+| FG_TOKEN                   | Filecoin Green API Key. Available within [co2.storage](https://co2.storage/) account.    |
+| INFURA_API_KEY             | Infura API Key. Available within [Infura](https://www.infura.io/)account.                |
+| PK                         | Private wallet key. Exportable from wallet application.                                  |
+| REACT_APP_SENTINEL_HUB_KEY | Sentinel Hub Key. Available within [Sentinel Hub](https://www.sentinel-hub.com/) account.|
