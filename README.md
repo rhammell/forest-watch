@@ -6,7 +6,9 @@ The app displays the details and geographic outlines of various afforestation, r
 Project data used by the app are stored is assets on co2.storage and conform to a ForestWatch template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to co2.storage. 
 
 ## Setup
-Node.js is required to run this application. Begin by cloning this repository and installing the required Node packages: 
+Node.js is required to run this application. 
+
+Begin by cloning this repository and installing the required Node packages: 
 
 ```bash
 # Clone this repository
@@ -36,6 +38,6 @@ Update the `.env` file by replacing the default variable values with your unique
 |-----------------------------------|-----------------------------------------------------------------------------------|
 | ESTUARY_API_KEY            | Estuary API Key. Available within [co2.storage](https://co2.storage/) account.           |
 | FG_TOKEN                   | Filecoin Green API Key. Available within [co2.storage](https://co2.storage/) account.    |
-| INFURA_API_KEY             | Infura API Key. Available within [Infura](https://www.infura.io/)account.                |
+| INFURA_API_KEY             | Infura API Key. Available within [Infura](https://www.infura.io/) account.                |
 | PK                         | Private wallet key. Exportable from wallet application.                                  |
 | REACT_APP_SENTINEL_HUB_KEY | Sentinel Hub Key. Available within [Sentinel Hub](https://www.sentinel-hub.com/) account.|
