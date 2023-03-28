@@ -1,7 +1,7 @@
 # Forest-Watch
 ForestWatch is a web app that allows users to observe and monitor forest-related carbon offset projects using satellite imagery.
 
-The app displays the details and geographic outlines of various afforestation, reforestation, and revegetation projects within a map interface. Historical satellite imagery can be overlaid on the map to explore land-cover changes through time, enabling users to verify whether a project's offset goals are being accomplished. 
+The app displays the details and geographic outlines of various afforestation and reforestation projects within a map interface. Historical satellite imagery can be overlaid on the map to explore land-cover changes through time, enabling users to verify whether a project's offset goals are being accomplished. 
 
 Project data are stored on [CO2.Storage](https://co2.storage/) as assets which conform to a "ForestWatch" template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to CO2.Storage. 
 
@@ -23,7 +23,7 @@ npm install
 
 ## Configuration
 
-Developer specific settings are required for interacting with co2.storage, IPFS, and imagery providers. These settings must be defined as environment variables within an `.env` file in the root directory.
+Developer specific settings are required for interacting with CO2.Storage, IPFS, and imagery providers. These settings must be defined as environment variables within an `.env` file in the root directory.
 
 Copy the included `.env.example` template file as `.env`: 
 
