@@ -66,8 +66,13 @@ The map displays all the geographic boundary polygons for the listed projects. I
 
 Projects can be explored by either clicking a menu item or map polygon. This will scoll the menu to highlight selected project's details, and center the map on the corresponding boundary polygon.
 
-Select buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. 
+Select buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. True Color, False Color, and NDVI imagery formats each provide a unique way to investigate the land-cover by highlighting trees and vegetation. 
 
+<p align="center">
+  <img src="img/true-color.png" width="250">
+  <img src="img/false-color.png" width="250">
+  <img src="img/ndvi.png" width="250">
+</p>
 
 
 
