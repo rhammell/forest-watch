@@ -5,7 +5,7 @@ The app displays the details and geographic boundaries of various afforestation 
 
 Users are easily able to verify whether a project's offset goals are being achieved by observing changes in tree coverage within a project's boundaries.
 
-Project data are stored on [CO2.Storage](https://co2.storage/) as assets which conform to a "ForestWatch" template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to CO2.Storage. 
+Project data is stored on [CO2.Storage](https://co2.storage/) as assets following a "ForestWatch" template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to CO2.Storage. 
 
 ## Setup
 Node.js is required to run this application. 
