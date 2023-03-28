@@ -1,5 +1,5 @@
 # Forest-Watch
-ForestWatch is a web app that allows users to observe and monitor forest-related carbon offset projects using satellite imagery.
+ForestWatch is a web app that allows users to monitor forest-related carbon offset projects using satellite imagery.
 
 The app displays the details and geographic outlines of various afforestation and reforestation projects within a map interface. Historical satellite imagery can be overlaid on the map to explore land-cover changes through time, enabling users to verify whether a project's offset goals are being accomplished. 
 
