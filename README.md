@@ -62,7 +62,7 @@ The map displays all the geographic boundary polygons for the listed projects. I
 
 <p align="center">
   <img src="img/interface.png" width="800">
-  <span>This is caption text</span>
+  <span>ForestWatch User Interface</span>
 </p>
 
 Projects can be explored by either clicking a menu item or map polygon. This will scoll the menu to highlight selected project's details, and center the map on the corresponding boundary polygon.
@@ -73,6 +73,7 @@ Select buttons along the bottom of the map allow user to choose the date range a
   <img src="img/true-color2.png" width="400px">
   <img src="img/false-color2.png" width="400px">
   <img src="img/ndvi2.png" width="400px">
+  <span>True Color, False Color, and NDVI imagery examples</span>
 </p>
 
 ## Data Processing
