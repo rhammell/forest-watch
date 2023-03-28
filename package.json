@@ -3,25 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.5.1",
+    "@co2-storage/js-api": "^1.1.38",
+    "@fontsource/amaranth": "^4.5.9",
+    "@fontsource/archivo": "^4.5.11",
+    "@fontsource/open-sans": "^4.5.14",
+    "@fontsource/raleway": "^4.5.12",
+    "axios": "^1.3.4",
+    "dotenv": "^16.0.3",
+    "ipfs-http-client": "^60.0.0",
+    "leaflet": "^1.9.3",
+    "leaflet-measure": "^3.1.0",
+    "multiformats": "^11.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-leaflet": "^4.2.1",
+    "react-read-more-read-less": "^1.0.7",
+    "react-router-dom": "^6.8.2",
+    "react-scripts": "^5.0.1",
+    "react-spinners": "^0.13.8",
+    "scroll-into-view": "^1.16.2",
+    "togeojson": "^0.16.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3002 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "get_assets": "cd data_processing && node get_assets.js",
+    "upload_assets": "cd data_processing && node upload_assets.mjs",
+    "create_template": "cd data_processing && node create_template.mjs"
   },
   "browserslist": {
     "production": [
