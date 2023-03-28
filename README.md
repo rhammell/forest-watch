@@ -1,9 +1,9 @@
 # Forest-Watch
 Forest-watch is a web app that allows users to monitor forest-related carbon offset projects using satellite imagery.
 
-The app displays the details and geographic outlines of various afforestation, reforestation, and revegetation projects within a map interface. Users can overlay historic satellite imagery on the map to inspect how the land-cover has changed through time, and verify that a project's stated goals are being accomplished.
+The app displays the details and geographic outlines of various afforestation, reforestation, and revegetation projects within a map interface. Users can overlay historical satellite imagery on the map to inspect how the land-cover has changed through time, and verify that a project's stated goals are being accomplished.
 
-Projects data used by the app are stored as assets on co2.storage and conform to a ForestWatch template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to c02.storage. 
+Project data used by the app are stored is assets on co2.storage and conform to a ForestWatch template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to co2.storage. 
 
 ## Setup
 Node.js is required to run this application. Begin by cloning this repository and installing the required Node packages: 
@@ -13,7 +13,7 @@ Node.js is required to run this application. Begin by cloning this repository an
 git clone https://github.com/rhammell/forest-watch.git
 
 # Navigate into the repository
-cd nft-me
+cd forest-watch
 
 # Install required node packages
 npm install
@@ -26,7 +26,7 @@ Developer specific settings are required for interacting with co2.storage, IPFS,
 Copy the included `.env.example` template file as `.env`: 
 
 ```bash
-# Copy environment variables template
+# Copy the environment variables template
 cp .env.example .env
 ```
 
