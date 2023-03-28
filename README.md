@@ -1,9 +1,9 @@
 # Forest-Watch
-Forest-watch is a web app that allows users to observe and monitor forest-related carbon offset projects using satellite imagery.
+ForestWatch is a web app that allows users to observe and monitor forest-related carbon offset projects using satellite imagery.
 
-The app displays the details and geographic outlines of various afforestation, reforestation, and revegetation projects within a map interface. Users can overlay historical satellite imagery on the map to view land-cover changes through time, allowing for verification that a project's defined goals are being accomplished.
+The app displays the details and geographic outlines of various afforestation, reforestation, and revegetation projects within a map interface. Users can overlay historical satellite imagery on the map to view land-cover changes through time, enabling users to verify that a project's offset goals are being accomplished.
 
-Project data is stored on [CO2.Storage](https://co2.storage/) as assets that conform to a ForestWatch template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to co2.storage. 
+Project data is stored on [CO2.Storage](https://co2.storage/) as assets which conform to a "ForestWatch" template. This repository includes scripts for building this template, gathering project data from Verra.org, and uploading the data to CO2.Storage. 
 
 ## Setup
 Node.js is required to run this application. 
@@ -34,8 +34,8 @@ cp .env.example .env
 
 Update the `.env` file by replacing the default variable values with your unique developer values. The required variables are described below: 
 
-| Variable                          | Description                                                                       |
-|-----------------------------------|-----------------------------------------------------------------------------------|
+| Variable                   | Description                                                                              |
+|----------------------------|------------------------------------------------------------------------------------------|
 | ESTUARY_API_KEY            | Estuary API Key. Available within [CO2.Storage](https://co2.storage/).                   |
 | FG_TOKEN                   | Filecoin Green API Key. Available with [CO2.Storage](https://co2.storage/).              |
 | INFURA_API_KEY             | Infura API Key. Available with [Infura](https://www.infura.io/).                         |
@@ -73,7 +73,7 @@ The map displays all the geographic boundary polygons for the listed projects. I
 
 Projects can be explored by either clicking a menu item or map polygon. This will scoll the menu to highlight selected project's details, and center the map on the corresponding boundary polygon.
 
-Select buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. True Color, False Color, and NDVI imagery formats each provide a unique way to investigate the land-cover by highlighting trees and vegetation. 
+Buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. True Color, False Color, and NDVI imagery formats each provide a unique way to visualize the land-cover encompassed by a project's outline. 
 
 <div align="center">
   <div>
@@ -81,10 +81,11 @@ Select buttons along the bottom of the map allow user to choose the date range a
   <img src="img/false-color2.png" width="270px">
   <img src="img/ndvi2.png" width="270px">
   </div>
-  <i>True Color, False Color, and NDVI imagery examples</i>
+  <p>
+    <i>True Color, False Color, and NDVI imagery examples</i>
+  </p>
 </div>
 
-
-The map displays all the geographic boundary polygons for the listed projects. It includes controls for panning, zooming, measuring acreage, and controlling satellite image layers. 
+With 
 
 ## Data Processing
