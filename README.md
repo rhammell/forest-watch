@@ -67,6 +67,7 @@ The map displays all the geographic boundary polygons for the listed projects. I
   <i>ForestWatch User Interface</i>
 </div>
 
+
 Projects can be explored by either clicking a menu item or map polygon. This will scoll the menu to highlight selected project's details, and center the map on the corresponding boundary polygon.
 
 Select buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. True Color, False Color, and NDVI imagery formats each provide a unique way to investigate the land-cover by highlighting trees and vegetation. 
@@ -79,5 +80,8 @@ Select buttons along the bottom of the map allow user to choose the date range a
   </div>
   <i>True Color, False Color, and NDVI imagery examples</i>
 </div>
+
+
+The map displays all the geographic boundary polygons for the listed projects. It includes controls for panning, zooming, measuring acreage, and controlling satellite image layers. 
 
 ## Data Processing
