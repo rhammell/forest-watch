@@ -68,11 +68,11 @@ Projects can be explored by either clicking a menu item or map polygon. This wil
 
 Select buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. True Color, False Color, and NDVI imagery formats each provide a unique way to investigate the land-cover by highlighting trees and vegetation. 
 
-<p align="center">
-  <img src="img/true-color2.png" width="250">
-  <img src="img/false-color2.png" width="250">
-  <img src="img/ndvi2.png" width="250">
-</p>
+<flex align="center">
+  <img src="img/true-color2.png">
+  <img src="img/false-color2.png">
+  <img src="img/ndvi2.png">
+</flex>
 
 
 
