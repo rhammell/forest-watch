@@ -42,7 +42,7 @@ Update the `.env` file by replacing the default variable values with your unique
 | PK                         | Private wallet key. Exportable from wallet application.                                  |
 | REACT_APP_SENTINEL_HUB_KEY | Sentinel Hub Key. Available with [Sentinel Hub](https://www.sentinel-hub.com/).          |
 
-## Usage
+## Web App
 Start a local development server to launch the app:
 
 ```bash
@@ -52,17 +52,17 @@ npm start
 
 Open a browser and navigate to `http://localhost:3002/` to view the web interface.
 
+## Usage
+
 The app interface is comprised of two main components, a project menu and map:
 
 <p align="center">
   <img src="img/interface.png" width="800">
 </p>
 
-<p align="center">
-  <img src="img/interface2.png" width="800">
-</p>
+The menu lists project data obtained from CO2.storage. When the app loads, it queries CO2.Storage for project assets created with the ForestWatch template. Details such as name, description, registry, and project hectares are included for each project. Clicking a project card will select it and center the map on the project's geographic boundary polygon. 
 
-The menu lists project data obtained from CO2.storage. Project details such as name, description, registry, and protected hectars are included for each project. 
+The map displays all the geographic boundary polygons for the listed projects. It includes controls for panning, zooming, and controlling satellite image layers. Clicking any polygon will center the map on it, and scroll the menu to select the corresponding project. 
 
 
 
