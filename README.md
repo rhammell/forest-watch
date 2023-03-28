@@ -66,11 +66,11 @@ The map displays geographic boundary polygons for each of the listed projects. U
   <div>
       <img src="img/interface.png" width="700">
   </div>
-  <small>
+  <p>
     <i>ForestWatch UI</i>
-  </small>
-
+  </p>
 </div>
+
 
 Buttons along the map bottom allow users to select the date range and satellite imagery product to display. True Color, False Color, and NDVI imagery products each provide a unique visualization of land-cover that highlights vegetation, making forest monitoring easier.
 
@@ -80,9 +80,9 @@ Buttons along the map bottom allow users to select the date range and satellite 
   <img src="img/false-color2.png" width="270px">
   <img src="img/ndvi2.png" width="270px">
   </div>
-  <small>
+  <p>
     <i>True Color, False Color, and NDVI imagery examples</i>
-  </small>
+  </p>
 </div>
 
 Clicking a menu item or map polygon will scroll the menu to highlight the selected project's details, and center the map on the corresponding boundary polygon. 
