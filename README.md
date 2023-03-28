@@ -37,7 +37,7 @@ Update the `.env` file by replacing the default variable values with your unique
 | Variable                          | Description                                                                       |
 |-----------------------------------|-----------------------------------------------------------------------------------|
 | ESTUARY_API_KEY            | Estuary API Key. Available within [co2.storage](https://co2.storage/).                   |
-| FG_TOKEN                   | Filecoin Green API Key. Available within [co2.storage](https://co2.storage/.             |
+| FG_TOKEN                   | Filecoin Green API Key. Available within [co2.storage](https://co2.storage/).             |
 | INFURA_API_KEY             | Infura API Key. Available within [Infura](https://www.infura.io/).                       |
 | PK                         | Private wallet key. Exportable from wallet application.                                  |
 | REACT_APP_SENTINEL_HUB_KEY | Sentinel Hub Key. Available within [Sentinel Hub](https://www.sentinel-hub.com/).        |
