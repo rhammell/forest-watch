@@ -71,9 +71,9 @@ Select buttons along the bottom of the map allow user to choose the date range a
 
 <div align="center">
   <div>
-  <img src="img/true-color2.png" width="400px">
-  <img src="img/false-color2.png" width="400px">
-  <img src="img/ndvi2.png" width="400px">
+  <img src="img/true-color2.png" width="300px">
+  <img src="img/false-color2.png" width="300px">
+  <img src="img/ndvi2.png" width="300px">
   </div>
   <i>True Color, False Color, and NDVI imagery examples</i>
 </div>
