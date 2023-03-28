@@ -61,7 +61,9 @@ The menu lists project data obtained from CO2.storage. When the app loads, it qu
 The map displays all the geographic boundary polygons for the listed projects. It includes controls for panning, zooming, measuring acreage, and controlling satellite image layers. 
 
 <p align="center">
-  <img src="img/interface.png" width="700">
+  <div>
+      <img src="img/interface.png" width="700">
+  </div>
   <i>ForestWatch User Interface</i>
 </p>
 
