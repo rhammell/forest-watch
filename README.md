@@ -58,6 +58,10 @@ The app interface is comprised of two main components, a project menu and map:
   <img src="img/interface.png" width="800">
 </p>
 
+<p align="center">
+  <img src="img/interface2.png" width="800">
+</p>
+
 The menu lists project data obtained from CO2.storage. Project details such as name, description, registry, and protected hectars are included for each project. 
 
 
