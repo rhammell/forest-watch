@@ -67,13 +67,10 @@ The map displays geographic boundary polygons for each of the listed projects. U
       <img src="img/interface.png" width="700">
   </div>
   <p>
-    <i>ForestWatch User Interface</i>
+    <i>ForestWatch UI</i>
   </p>
 
 </div>
-
-
-Clicking a menu item or map polygon will scroll the menu to highlight the selected project's details, and center the map on the corresponding boundary polygon. 
 
 Buttons along the map bottom allow users to select the date range and type of satellite imagery to display. 
 
@@ -89,6 +86,11 @@ Buttons along the map bottom allow users to select the date range and type of sa
 </div>
 
 True Color, False Color, and NDVI imagery types each provide a unique way to visualize land-cover and highlight vegetation.
+
+
+Clicking a menu item or map polygon will scroll the menu to highlight the selected project's details, and center the map on the corresponding boundary polygon. 
+
+
 
 
 ## Data Processing
