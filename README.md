@@ -3,7 +3,7 @@ ForestWatch is a web app that allows users to monitor forest-related carbon offs
 
 The app displays the details and geographic boundaries of various afforestation and reforestation projects within a map interface. Historical satellite imagery can be overlaid on the map to explore land-cover changes through time.
 
-Users are able to verify whether a project's offset goals are being acheived by easily monitoring any changes to the tree coverage occurring within a project's boundaries.
+Users are able to verify whether a project's offset goals are being acheived by easily observing any changes to the tree coverage occurring within a project's boundaries.
 
 Project data is stored on [CO2.Storage](https://co2.storage/) as assets which follow a "ForestWatch" template. This repository also includes scripts for building this template, gathering project data from Verra, and uploading data to CO2.Storage. 
 
