@@ -64,7 +64,10 @@ The map displays all the geographic boundary polygons for the listed projects. I
   <div>
       <img src="img/interface.png" width="700">
   </div>
-  <i>ForestWatch User Interface</i>
+  <p>
+    <i>ForestWatch User Interface</i>
+  </p>
+
 </div>
 
 
