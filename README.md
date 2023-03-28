@@ -73,9 +73,9 @@ The map displays geographic boundary polygons for each of the listed projects. U
 </div>
 
 
-Projects can be explored by either clicking a menu item or map polygon. This will scoll the menu to highlight selected project's details, and center the map on the corresponding boundary polygon.
+Clicking a menu item or map polygon will scroll the menu to highlight the selected project's details, and center the map on the corresponding boundary polygon. 
 
-Buttons along the bottom of the map allow user to choose the date range and format of satellite imagery to display. True Color, False Color, and NDVI imagery formats each provide a unique way to visualize the land-cover encompassed by a project's outline. 
+Buttons along the map bottom allow users to select the date range and type of satellite imagery to display. 
 
 <div align="center">
   <div>
@@ -88,6 +88,7 @@ Buttons along the bottom of the map allow user to choose the date range and form
   </p>
 </div>
 
-With 
+True Color, False Color, and NDVI imagery types each provide a unique way to visualize land-cover and highlight vegetation.
+
 
 ## Data Processing
