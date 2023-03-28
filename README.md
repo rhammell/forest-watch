@@ -54,15 +54,15 @@ Open a browser and navigate to `http://localhost:3002/` to view the web interfac
 
 ## Usage
 
-The app interface is comprised of two main components, a project menu and map:
-
-<p align="center">
-  <img src="img/interface.png" width="800">
-</p>
+The app interface is comprised of two main components, a project menu and map.
 
 The menu lists project data obtained from CO2.storage. When the app loads, it queries CO2.Storage for project assets created with the ForestWatch template. Details such as name, description, registry, and project hectares are included for each project. 
 
 The map displays all the geographic boundary polygons for the listed projects. It includes controls for panning, zooming, measuring acreage, and controlling satellite image layers. 
+
+<p align="center">
+  <img src="img/interface.png" width="800">
+</p>
 
 Projects can be explored by either clicking a menu item or map polygon. This will scoll the menu to highlight selected project's details, and center the map on the corresponding boundary polygon.
 
