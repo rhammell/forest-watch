@@ -60,7 +60,7 @@ The app interface is comprised of two main components: a project menu and map.
 
 The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for assets created with the ForestWatch template, which includes project details such as name, description, registry, and boundary polygon.
 
-The map displays each of the listed project's boundary polygons. Users can pan, zoom, and measure acreage using the map tools.
+The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools.
 
 <div align="center">
   <div>
