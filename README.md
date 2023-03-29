@@ -58,7 +58,7 @@ Open a browser and navigate to `http://localhost:3002/` to view the web interfac
 
 The app interface is comprised of two main components: a project menu and map.
 
-The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for assets created with the ForestWatch template, which includes project details such as name, description, registry, and area.
+The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for assets created with the ForestWatch template, which includes project details such as name, description, registry, and boundary polygon.
 
 The map displays geographic boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools.
 
@@ -90,6 +90,6 @@ Projects can be explored by either clicking a menu item or clicking a map polygo
 
 Users can read the selected project's description to determine its carbon offset goals, which may include reforresation or afforesation efforts.
 
-Imagery controls cna then be used to view satellite imagery of the project's defined boundary over the span of many years, and observe changes to the tree coverage that reflect the project's goals.
+Imagery controls can then be used to view satellite imagery of the project's defined boundary over the span of many years, and observe changes to the tree coverage that reflect the project's goals.
 
 ## Data Processing
