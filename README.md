@@ -5,7 +5,7 @@ The app displays the details and geographic boundaries of various afforestation 
 
 Users are able to verify whether a project's offset goals are being acheived by easily observing any changes to tree coverage occurring within a project's boundaries.
 
-Project data is stored on [CO2.Storage](https://co2.storage/) as assets which follow a "ForestWatch" template. This repository also includes scripts for building this template, gathering project data from Verra, and uploading data to CO2.Storage. 
+Project data is stored on [CO2.Storage](https://co2.storage/) as assets which follow a "ForestWatch" template.
 
 ## Setup
 Node.js is required to run this application. 
@@ -56,7 +56,7 @@ Open a browser and navigate to `http://localhost:3002/` to view the web interfac
 
 ## Usage
 
-The app interface is comprised of two main components, a project menu and map.
+The app interface is comprised of two main components: a project menu and map.
 
 The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for assets created with the ForestWatch template, which includes project details such as name, description, registry, and area.
 
@@ -72,7 +72,9 @@ The map displays geographic boundary polygons for each of the listed projects. U
 </div>
 
 
-Buttons along the map bottom allow users to select the date range and satellite imagery product to display. True Color, False Color, and NDVI imagery products each provide a unique visualization of land-cover that highlights vegetation, making forest monitoring easier.
+Buttons along the map bottom allow users to select the date range and product type of the satellite imagery to display. 
+
+True Color, False Color, and NDVI imagery products each provide a unique visualization of land-cover that highlights vegetation, making forest monitoring easier.
 
 <div align="center">
   <div>
@@ -85,6 +87,6 @@ Buttons along the map bottom allow users to select the date range and satellite 
   </p>
 </div>
 
-Clicking a menu item or map polygon will scroll the menu to highlight the selected project's details, and center the map on the corresponding boundary polygon. 
+Project's can be explored by either clicking a menu item or clicking a map polygon. Either 
 
 ## Data Processing
