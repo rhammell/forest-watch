@@ -86,6 +86,8 @@ True Color, False Color, and NDVI imagery products each provide a unique visuali
   </p>
 </div>
 
-Project's can be explored by either clicking a menu item or clicking a map polygon. Either 
+Project's can be explored by either clicking a menu item or clicking a map polygon. Both actions will scroll the menu list to the selected project's details, and center the map on the project's boundary. 
+
+Once selected, users can read the project's description to help determine the goals of the carbon offset project - either reforresation or afforesation efforts. The imagery controls can then be used to view satellite imagery of the project's area throughout many years, and observe if the tree coverage has changed in that time, according to the project's goals. 
 
 ## Data Processing
