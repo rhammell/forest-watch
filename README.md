@@ -73,7 +73,7 @@ The map displays the boundary polygons for each of the listed projects. Users ca
 
 Buttons along the map bottom enable users to select the date and product type of satellite imagery to display. 
 
-False Color and NDVI imagery products provide land-cover visualizations which highlight vegetation, making it easier to monitor the presense of trees.
+False Color and NDVI imagery products provide land-cover visualizations which highlight vegetation, making it easier to observe the presense of trees.
 
 <div align="center">
   <div>
@@ -86,10 +86,10 @@ False Color and NDVI imagery products provide land-cover visualizations which hi
   </p>
 </div>
 
-Projects can be explored by either clicking a menu item or clicking a map polygon. Both actions will scroll the menu list to the selected project's details, and center the map on the project's boundary. 
+Projects can be explored by either clicking a menu item or clicking a map polygon. Both actions will scroll the menu list to the selected project's details, and center the map on the project's boundary.
 
 Users can read the selected project's description to determine its carbon offset goals, which may include reforresation or afforesation efforts.
 
-Imagery controls can then be used to view satellite imagery of the project's defined boundary over the span of many years, and observe changes to the tree coverage that reflect the project's goals.
+Map controls can then be used to explore satellite imagery that covers the projec't territory over the span of many years. Notable changes to the tree coverage between images may verify the project's goals are being achieved.
 
 ## Data Processing
