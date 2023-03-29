@@ -71,7 +71,7 @@ The map displays the boundary polygons for each of the listed projects. Users ca
   </p>
 </div>
 
-Buttons along the map bottom enable users to select the date and product type (True Color, False Color, NDVI) of satellite imagery to display. 
+Buttons along the map bottom enable users to select the date and product type of satellite imagery to display. 
 
 False Color and NDVI imagery products provide land-cover visualizations which highlight vegetation, making it easier to monitor the presense of trees.
 
