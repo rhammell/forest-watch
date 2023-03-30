@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { FGStorage } from '@co2-storage/js-api'
+import { CID } from 'multiformats/cid'
 import Map from './Map'
 import Menu from './Menu'
 
 function App() {
   const [projects, setProjects] = useState(null);
   const [total, setTotal] = useState(0);
-  const [page, setPage] = useState(2);
+  const [page, setPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedId, setSelectedId] = useState(null);
 
@@ -15,23 +16,26 @@ function App() {
 
   // Get project details
   const fetchProjectData = async (cid) => {
+    
     // Request asset details from IPFS
-    let ipfsUrl = "https://ipfs.io/api/v0/dag/get?arg=" + cid
-    let res = await fetch(ipfsUrl);
-    let data = await res.json();
+    const ipfsApi = process.env.REACT_APP_IPFS_API_HOST
+    const apiUrl = `${ipfsApi}/api/v0/dag/get?arg=${cid}`
+    const apiRes = await fetch(apiUrl, {method: "POST", mode: "cors"});
+    const data = await apiRes.json();
 
     // Convert array of key/value pairs into single object
-    data = Object.assign({}, ...data);
+    const projectData = Object.assign({}, ...data);
 
     // Request GeoJSON data from IPFS
-    ipfsUrl = "https://ipfs.io/ipfs/" + data.GeoCid;
-    res = await fetch(ipfsUrl);
-    const geoJSON = await res.json();
+    const ipfsGateway = process.env.REACT_APP_IPFS_GATEWAY_HOST
+    const gatewayUrl = `${ipfsGateway}/ipfs/${projectData.GeoCid}`
+    const gatewayRes = await fetch(gatewayUrl);
+    const geoJSON = await gatewayRes.json();
 
     // Update asset data with geojson
-    data.GeoJSON = geoJSON;
+    projectData.GeoJSON = geoJSON;
 
-    return data;
+    return projectData;
   }
 
   // Search projects and collete projec details
@@ -64,8 +68,20 @@ function App() {
 
   return (
     <>
-      <Menu projects={projects} total={total} page={page} pageSize={pageSize} isLoading={isLoading} handleSelect={setSelectedId} selectedId={selectedId}/>
-      <Map projects={projects} selectedId={selectedId} handleSelect={setSelectedId} />
+      <Menu 
+        projects={projects} 
+        total={total} 
+        page={page} 
+        pageSize={pageSize} 
+        isLoading={isLoading} 
+        handleSelect={setSelectedId} 
+        selectedId={selectedId
+      }/>
+      <Map 
+        projects={projects} 
+        selectedId={selectedId}
+        handleSelect={setSelectedId} 
+      />
     </>
   );
 }

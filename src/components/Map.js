@@ -151,7 +151,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
 
   // Tile layer options change effect
   useEffect(() => {
-    addLayer();
+    //addLayer();
   }, [layerName, layerTime])
 
   // Effect called each time products are updated

@@ -3,7 +3,7 @@ ForestWatch is a web app that allows users to monitor forest-related carbon offs
 
 The app displays the details and geographic boundaries of various reforestation projects within a map interface. Historical satellite imagery can be overlaid on the map to explore land-cover changes through time.
 
-Users are able to verify whether a project's offset goals are being acheived by observing the changes in tree coverage occuring inside the project's boundaries.
+Users are able to verify whether a project's offset goals are being acheived by observing changes in tree coverage occuring inside the project's boundaries.
 
 Project data is stored on [CO2.Storage](https://co2.storage/) as assets which follow a "ForestWatch" template.
 
@@ -58,7 +58,7 @@ Open a browser and navigate to `http://localhost:3002/` to view the web interfac
 
 The app interface is comprised of two main components: a project menu and map.
 
-The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for all assets created with the ForestWatch template, which includes project details such as name, description, registry, and boundary polygon.
+The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for all assets created with the ForestWatch template, which includes project details such as name, description, registry, and boundary polygons.
 
 The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools.
 
@@ -71,15 +71,15 @@ The map displays the boundary polygons for each of the listed projects. Users ca
   </p>
 </div>
 
-Buttons along the map bottom enable users to select the date and product type of satellite imagery to display. 
+Buttons along the map bottom enable users to select the year and product type of satellite imagery to display. 
 
 False Color and NDVI imagery products provide land-cover visualizations which highlight vegetation, making it easier to observe the presense of trees.
 
 <div align="center">
   <div>
-  <img src="img/true-color2.png" width="270px">
-  <img src="img/false-color2.png" width="270px">
-  <img src="img/ndvi2.png" width="270px">
+  <img src="img/true-color.png" width="270px">
+  <img src="img/false-color.png" width="270px">
+  <img src="img/ndvi.png" width="270px">
   </div>
   <p>
     <i>True Color, False Color, and NDVI imagery examples</i>
@@ -90,7 +90,12 @@ Projects can be explored by either clicking a menu item or clicking a map polygo
 
 Users can read the selected project's description to determine its carbon offset goals, which may include reforresation or afforesation efforts.
 
-Map controls can then be used to explore satellite imagery that covers the project's territory over the span of many years. Notable changes to the tree coverage between images can help verify that a project's goals are being achieved.
+Map controls are used to explore satellite imagery covering the project's territory over the span of many years. By visually tracking the changes in tree cover between images, users can verify that a project's goals are being achieved.
 
-## Data Processing
-Carbon offset project data is stored on CO2.Storage in the form of assets. These assets conform to a "ForrestWatch" template, which requires project's to 
+## CO2.Storage
+Carbon offset project data is stored on CO2.Storage in the form of assets.
+
+A "ForestWatch" CO2.Storage template provides a structured schema for these assets, defining the data fields which all assets of this type are required to have.
+
+
+
