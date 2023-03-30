@@ -98,7 +98,7 @@ Among other project specific fields like name, description, and registry informa
 Create a new version of this template on CO2.Storage with the following command: 
 
 ```bash
-# Copy the environment variables template
+# Create new ForestWatch template on C02.Storage
 npm run create_template
 ```
 
@@ -108,7 +108,7 @@ npm run create_template
 Download Verra project data locally with the following command: 
 
 ```bash
-# Copy the environment variables template
+# Download project data from Verra.org
 npm run get_assets
 ```
 
@@ -117,11 +117,11 @@ This will search Verra for forest-related projects, which also include KML files
 Upload the Verra project data to C02.Storage with the following command: 
 
 ```bash
-# Copy the environment variables template
+# Upload project data as assets on C02.Storage
 npm run upload_assets
 ```
 
-This command runs the `data_processing/upload_assets.mjs` script that uses the C02.Storage JS-API to programatically add the projects as assets on C02.Storage. The upload process utilizes the CID of the ForestWatch template on C02.Storage to make sure that all assets include the required data fields. 
+This command utilizes the C02.Storage JS-API to programatically add the Verra project data as assets on C02.Storage. The API upload process uses the CID of the ForestWatch template already created on C02.Storage to ensure that all assets include the required data fields.
 
 
 
