@@ -95,7 +95,16 @@ Map controls are used to explore satellite imagery covering the project's territ
 ## CO2.Storage
 Carbon offset project data is stored on CO2.Storage in the form of assets.
 
-A "ForestWatch" CO2.Storage template provides a structured schema for these assets, defining the data fields which all assets of this type are required to have.
+A ForestWatch CO2.Storage template provides a structured schema for these assets, defining the data fields which all assets of this type are required to have. An example of this template is available [here](). 
+
+Among other project specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the assets boundary, uploaded to IPFS.
+
+Create a new version of this template on CO2.Storage with the following command: 
+
+```bash
+# Copy the environment variables template
+npm run create_template
+```
 
 
 
