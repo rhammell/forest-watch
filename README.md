@@ -66,13 +66,12 @@ The menu lists project data obtained from CO2.Storage. The app queries CO2.Stora
   <div>
       <img src="img/interface.png" width="700">
   </div>
-  <p>ForestWatch UI
-  </p>
+  <p>ForestWatch UI</p>
 </div>
 
 The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools, as well as select the year and product type of the satellite imagery to display.
 
-False Color and NDVI imagery products provide land-cover visualizations which highlight vegetation, making it easier to observe the presense of trees.
+False Color and NDVI imagary products are used to visually highlight vegetation within images, making it easier to observe the presensce of trees.
 
 <div align="center">
   <div>
@@ -80,8 +79,7 @@ False Color and NDVI imagery products provide land-cover visualizations which hi
     <img src="img/false-color.png" width="270px">
     <img src="img/ndvi.png" width="270px">
   </div>
-  <p>True Color, False Color, and NDVI imagery examples
-  </p>
+  <p>True Color, False Color, and NDVI imagery examples</p>
 </div>
 
 Projects can be explored by either clicking a menu item or clicking a map polygon. Both actions will scroll the menu list to the selected project's details, and center the map on the project's boundary.
