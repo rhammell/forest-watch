@@ -90,7 +90,7 @@ Projects can be explored by either clicking a menu item or clicking a map polygo
 
 Users can read the selected project's description to determine its carbon offset goals, which may include reforresation or afforesation efforts.
 
-Map controls are used to explore satellite imagery covering the project's territory over the span of many years. By visually tracking the changes in tree cover between images, users can verify that a project's goals are being achieved.
+Map controls are used to explore satellite imagery covering the project's territory over the span of many years. By visually tracking changes in tree cover between images, users can verify that a project's goals are being achieved.
 
 ## CO2.Storage
 Carbon offset project data is stored on CO2.Storage in the form of assets.
