@@ -66,8 +66,7 @@ The menu lists project data obtained from CO2.Storage. The app queries CO2.Stora
   <div>
       <img src="img/interface.png" width="700">
   </div>
-  <p>
-    <i>ForestWatch UI</i>
+  <p>ForestWatch UI
   </p>
 </div>
 
@@ -77,12 +76,11 @@ False Color and NDVI imagery products provide land-cover visualizations which hi
 
 <div align="center">
   <div>
-  <img src="img/true-color.png" width="270px">
-  <img src="img/false-color.png" width="270px">
-  <img src="img/ndvi.png" width="270px">
+    <img src="img/true-color.png" width="270px">
+    <img src="img/false-color.png" width="270px">
+    <img src="img/ndvi.png" width="270px">
   </div>
-  <p>
-    <i>True Color, False Color, and NDVI imagery examples</i>
+  <p>True Color, False Color, and NDVI imagery examples
   </p>
 </div>
 
