@@ -93,7 +93,7 @@ Carbon offset project data is stored on CO2.Storage in the form of assets.
 
 A ForestWatch CO2.Storage template provides the structured schema for these assets, defining data fields which all assets of this type are required to have. An example of the ForestWatch template is available [here](). 
 
-Among other project specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the assets boundary, uploaded to IPFS.
+Among other project specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the project's boundary, stored separately on IPFS.
 
 Create a new version of this template on CO2.Storage with the following command: 
 
