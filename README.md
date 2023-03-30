@@ -91,7 +91,7 @@ Map controls are used to explore satellite imagery covering the project's territ
 ## CO2.Storage
 Carbon offset project data is stored on CO2.Storage in the form of assets.
 
-A ForestWatch CO2.Storage template provides the structured schema for these assets, defining data fields which all assets of this type are required to have. An example of the ForestWatch template is available [here](). 
+A ForestWatch CO2.Storage template provides the structured schema for these assets, defining the data fields which all assets of this type are required to have. An example of the ForestWatch template is available [here](). 
 
 Among other project specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the project's boundary, stored separately on IPFS.
 
@@ -103,6 +103,26 @@ npm run create_template
 ```
 
 ## Data Processing
+[Verra.org](https://verra.org/) is a registry of carbon offset projects which can be utilized by ForestWatch.
+
+Download Verra project data locally with the following command: 
+
+```bash
+# Copy the environment variables template
+npm run get_assets
+```
+
+This will search Verra for forest-related projects, which also include KML files defining a project boundary. The process converts each KML to GeoJSON and stores the project data within `data_processing/assets`. 
+
+Upload the Verra project data to C02.Storage with the following command: 
+
+```bash
+# Copy the environment variables template
+npm run upload_assets
+```
+
+This command runs the `data_processing/upload_assets.mjs` script that uses the C02.Storage JS-API to programatically add the projects as assets on C02.Storage. The upload process utilizes the CID of the ForestWatch template on C02.Storage to make sure that all assets include the required data fields. 
+
 
 
 

@@ -1,5 +1,5 @@
 /*
-  Create Verra.org project asset template on c02.storage
+  Create ForestWatch asset template on c02.storage
 */
 
 import { FGStorage } from '@co2-storage/js-api'
