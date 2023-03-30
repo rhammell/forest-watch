@@ -71,7 +71,7 @@ The menu lists project data obtained from CO2.Storage. The app queries CO2.Stora
 
 The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools, as well as select the year and product type of the satellite imagery to display.
 
-False Color and NDVI imagary products are used to visually highlight vegetation within images, making it easier to observe the presensce of trees.
+False Color and NDVI products are used to visually highlight vegetation within images, making it easier to observe the presensce of trees.
 
 <div align="center">
   <div>
