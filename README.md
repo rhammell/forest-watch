@@ -43,6 +43,8 @@ Update the `.env` file by replacing the default variable values with your unique
 | INFURA_API_KEY             | Infura API Key. Available with [Infura](https://www.infura.io/).                         |
 | PK                         | Private wallet key. Exportable from wallet application.                                  |
 | REACT_APP_SENTINEL_HUB_KEY | Sentinel Hub Key. Available with [Sentinel Hub](https://www.sentinel-hub.com/).          |
+| REACT_APP_IPFS_API_HOST    | IPFS Node URL with API access                                                            |
+| REACT_APP_IPFS_GATEWAY_HOST| IPFS Node URL with Gateway access                                                        |
 
 ## Web App
 Start a local development server to launch the app:
@@ -60,7 +62,7 @@ The app interface is comprised of two main components: a project menu and map.
 
 The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for assets created with the ForestWatch template, which includes project details such as name, description, registry, and boundary polygons.
 
-The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools.
+The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools, as well as select the year and product type of the satellite imagery to display.
 
 <div align="center">
   <div>
@@ -70,8 +72,6 @@ The map displays the boundary polygons for each of the listed projects. Users ca
     <i>ForestWatch UI</i>
   </p>
 </div>
-
-Buttons along the map bottom enable users to select the year and product type of satellite imagery to display. 
 
 False Color and NDVI imagery products provide land-cover visualizations which highlight vegetation, making it easier to observe the presense of trees.
 
@@ -105,6 +105,10 @@ Create a new version of this template on CO2.Storage with the following command:
 # Copy the environment variables template
 npm run create_template
 ```
+
+## Data Processing
+
+
 
 
 
