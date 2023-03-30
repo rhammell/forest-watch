@@ -102,7 +102,7 @@ Create a new version of this template on CO2.Storage with the following command:
 npm run create_template
 ```
 
-## Data Processing
+## Verra Data Processing
 [Verra.org](https://verra.org/) is a registry of carbon offset projects which can be utilized by ForestWatch.
 
 Download Verra project data locally with the following command: 
