@@ -3,9 +3,9 @@ ForestWatch is a web app that allows users to monitor forest-related carbon offs
 
 The app displays the details and geographic boundaries of various reforestation projects within a map interface. Historical satellite imagery can be overlaid on the map to explore land-cover changes through time.
 
-Users are able to verify whether a project's offset goals are being acheived by observing changes to the tree coverage occuring inside the project's boundaries.
+Users are able to verify whether a project's offset goals are being achieved by observing changes to the tree coverage occurring inside the project's boundaries.
 
-Project data is stored on [CO2.Storage](https://co2.storage/) as assets which follow a "ForestWatch" template.
+Project data is stored on [CO2.Storage](https://co2.storage/) as assets that follow a ForestWatch template.
 
 ## Setup
 Node.js is required to run this application. 
@@ -71,7 +71,7 @@ The menu lists project data obtained from CO2.Storage. The app queries CO2.Stora
 
 The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools, as well as select the year and product type of the satellite imagery to display.
 
-False Color and NDVI products visually highlight vegetation within imagery, making it easier for users to observe the presence of trees.
+False-Color and NDVI products visually highlight vegetation within imagery, making it easier for users to observe the presence of trees.
 
 <div align="center">
   <div>
@@ -79,19 +79,19 @@ False Color and NDVI products visually highlight vegetation within imagery, maki
     <img src="img/false-color.png" width="270px">
     <img src="img/ndvi.png" width="270px">
   </div>
-  <p>True Color, False Color, and NDVI imagery examples</p>
+  <p>True-Color, False-Color, and NDVI imagery examples</p>
 </div>
 
 Projects can be explored by either clicking a menu item or clicking a map polygon. Both actions will scroll the menu list to the selected project's details, and center the map on the project's boundary.
 
-Users can read the selected project's description to determine its carbon offset goals, which may include reforresation or afforesation efforts.
+Users can read the selected project's description to determine its carbon offset goals, which may include reforesation or afforestation efforts.
 
 Map controls are used to explore satellite imagery covering the project's territory over the span of many years. By tracking changes in tree cover between images, users can verify that a project's goals are being achieved.
 
 ## CO2.Storage
 Carbon offset project data is stored on CO2.Storage in the form of assets.
 
-A ForestWatch CO2.Storage template provides the structured schema for these assets, defining the data fields which all assets of this type are required to have. An example of the ForestWatch template is available [here](). 
+A ForestWatch CO2.Storage template provides the structured schema for these assets, defining the data fields that all assets of this type are required to have. An example of the ForestWatch template is available [here](). 
 
 Among other project specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the project's boundary, stored separately on IPFS.
 
@@ -103,7 +103,7 @@ npm run create_template
 ```
 
 ## Verra Data Processing
-[Verra.org](https://verra.org/) is a registry of carbon offset projects which can be utilized by ForestWatch.
+[Verra.org](https://verra.org/) is a registry of carbon offset projects that can be utilized by ForestWatch.
 
 Download Verra project data locally with the following command: 
 
@@ -121,7 +121,7 @@ Upload the Verra project data to C02.Storage with the following command:
 npm run upload_assets
 ```
 
-This command utilizes the C02.Storage JS-API to programatically add the Verra project data as assets on C02.Storage. The API upload process uses the CID of the ForestWatch template already created on C02.Storage to ensure that all assets include the required data fields.
+This command utilizes the C02.Storage JS-API to programmatically add the Verra project data as assets on C02.Storage. The API upload process uses the CID of the ForestWatch template already created on C02.Storage to ensure that all assets include the required data fields.
 
 
 
