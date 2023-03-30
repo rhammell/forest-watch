@@ -45,9 +45,11 @@ function App() {
     setIsLoading(true);
 
     // Search co2.storage for project assets based on template and creator
+    const templateCID =  "bafyreifi3kwwrq2av6o7qvzhlq6f5jlbvceyrtjtppgz2u6xxlxmszlfeq"
+    const creatorAddress = "0xa401067a067395820ccf50c2370ec3286ac885db"
     const fgApiUrl = "https://co2.storage/"
     const fgStorage = new FGStorage({fgApiHost: fgApiUrl})
-    const searchAssetsResponse = await fgStorage.search(null, null, 'asset', null, null, null, null, null, "bafyreifxryghih3tojumjo6jnrugenzwjxlxrq6ud22bclwbw3o6eulmx4", null, "0xa401067a067395820ccf50c2370ec3286ac885db", null, null, null, page * pageSize, pageSize)
+    const searchAssetsResponse = await fgStorage.search(null, null, 'asset', null, null, null, null, null, templateCID, null, creatorAddress, null, null, null, page * pageSize, pageSize)
     const searchResults = searchAssetsResponse.result;
     
     // Request details for each result

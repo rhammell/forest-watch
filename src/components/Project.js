@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import scrollIntoView from 'scroll-into-view';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import ReactReadMoreReadLess from "react-read-more-read-less";
 
 const Project = ({ project, selectedId, handleSelect }) => {

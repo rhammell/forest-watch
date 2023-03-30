@@ -8,12 +8,12 @@ import { fileURLToPath } from 'url';
 import { DOMParser } from 'xmldom';
 import toGeoJSON from 'togeojson';
 
-// Define script directory
+// Define asset directory
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const assetDir = path.join(__dirname, 'assets')
 
-// Create output dir
-let assetDir = path.join('./', 'assets')
+// Create asset dir if it doesn't exist
 if (!fs.existsSync(assetDir)) {
   fs.mkdirSync(assetDir);
 }

@@ -1,10 +1,8 @@
 /*
-  Create ForestWatch asset template on c02.storage
+  Create ForestWatch asset template on CO2.Storage
 */
 
 import { FGStorage } from '@co2-storage/js-api'
-import * as dotenv from 'dotenv' 
-dotenv.config()
 
 // Init FG Storage object - Note: ensure .env file is configured
 const authType = "pk"
@@ -20,6 +18,8 @@ const fgStorage = new FGStorage({
 
 // Template parameters
 const template = {
+  RegistryName: { type: 'string', mandatory: true },
+  RegistryUrl: { type: 'string', mandatory: true },
   Id: { type: 'string', mandatory: true },
   Name: { type: 'string', mandatory: true },
   Description: { type: 'string', mandatory: true },
@@ -28,16 +28,17 @@ const template = {
   CategoryName: { type: 'string'},
   Acreage: { type: 'string' },
   RegistrationDate: { type: 'string' },
-  ProjectStatus: { type: 'string'},
+  Status: { type: 'string'},
   ValidatorName: { type: 'string' },
   ProponentName: { type: 'string' },
   PoolCredits: { type: 'string' },
   CreditPeriod: { type: 'string' },
-  GeoCid: { type: 'string', mandatory: true }
+  GeoCid: { type: 'string', mandatory: true },
+  Url: { type: 'string', mandatory: true },
 }
-const templateName = 'Verra Project'
-const templateDescription = 'Verra project details'
-const chainName = 'sandbox'
+const templateName = 'ForestWatch'
+const templateDescription = 'Template for forest-related carbon offset projects which include geospatial data'
+const chainName = 'ForestWatch'
 
 // Create template
 let addTemplateResponse = await fgStorage.addTemplate(template, templateName, null, templateDescription, null, chainName)

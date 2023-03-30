@@ -1,13 +1,11 @@
 /*
-  Add Verra.org project data as assets on c02.storage
+  Add Verra.org project data as assets on CO2.Storage
 */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { FGStorage } from '@co2-storage/js-api'
-import * as dotenv from 'dotenv' 
-dotenv.config()
 
 // Init FG Storage object - Note: ensure .env file is configured
 const authType = "pk"
@@ -55,10 +53,11 @@ for (const fname of fnames) {
   const jsonString = JSON.stringify(asset.geoJSON)
   const result = await fgStorage.ipfs.add(jsonString)
   const geoCid = result.path
-  //console.log(asset.id)
 
   // Asset elements
   const assetElements = [
+    {"name": "RegistryName", "value": "Verra"},
+    {"name": "RegistryUrl", "value": "https://verra.org/"},
     {"name": "Id", "value": asset.id},
     {"name": "Name", "value": asset.name},
     {"name": "Description", "value": asset.description},
@@ -67,31 +66,37 @@ for (const fname of fnames) {
     {"name": "CategoryName", "value": asset.categoryName},
     {"name": "Acreage", "value": asset.acreage},
     {"name": "RegistrationDate", "value": asset.registrationDate},
-    {"name": "ProjectStatus", "value": asset.projectStatus},
+    {"name": "Status", "value": asset.projectStatus},
     {"name": "ValidatorName", "value": asset.validatorName},
     {"name": "ProponentName", "value": asset.proponentName},
     {"name": "PoolCredits", "value": asset.poolCredits.toString()},
     {"name": "CreditPeriod", "value": asset.creditPeriod},
-    {"name": "GeoCid", "value": geoCid}
+    {"name": "GeoCid", "value": geoCid},
+    {"name": "Url", "value": `https://registry.verra.org/app/projectDetail/VCS/${asset.id}`},
   ]
+
+  // Define CO2.Storage parameters
+  const templateCID = "bafyreifi3kwwrq2av6o7qvzhlq6f5jlbvceyrtjtppgz2u6xxlxmszlfeq" // ForestWatch template
+  const chainName = "ForestWatch" // ForestWach Environment
+  const assetName = "Verra Project " + asset.id
+  const assetDesc = asset.name
 
   // Add asset to c02.storage
   const addAssetResponse = await fgStorage.addAsset(
     assetElements,
     {
       parent: null,
-      name: "Verra Project: " + asset.id,
-      description: asset.name,
-      template: "bafyreifxryghih3tojumjo6jnrugenzwjxlxrq6ud22bclwbw3o6eulmx4",
+      name: assetName,
+      description: assetDesc,
+      template: templateCID,
       filesUploadStart: () => {console.log("Upload started")},
       filesUpload: async (bytes, p) => {console.log(`${bytes} uploaded`)},
       filesUploadEnd: () => {console.log("Upload finished")},
       createAssetStart: () => {console.log("Creating asset")},
       createAssetEnd: () => {console.log("Asset created")}
     },
-    'sandbox'
+    chainName
   )
-
   console.log("Verra Project: " + asset.id)
 
 }
