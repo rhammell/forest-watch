@@ -124,10 +124,10 @@ const Project = ({ project, selectedId, handleSelect }) => {
       >
         <Link
           size="sm"
-          href={'https://registry.verra.org/app/projectDetail/VCS/' + project.Id}
+          href={project.Url}
           isExternal
         >
-          View on Verra <ExternalLinkIcon />
+          View on {project.RegistryName} <ExternalLinkIcon />
         </Link>
       </Text>
 
