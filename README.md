@@ -62,8 +62,6 @@ The app interface is comprised of two main components: a project menu and map.
 
 The menu lists project data obtained from CO2.Storage. The app queries CO2.Storage for assets created with the ForestWatch template, which includes project details such as name, description, registry, and boundary polygons.
 
-The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools, as well as select the year and product type of the satellite imagery to display.
-
 <div align="center">
   <div>
       <img src="img/interface.png" width="700">
@@ -72,6 +70,8 @@ The map displays the boundary polygons for each of the listed projects. Users ca
     <i>ForestWatch UI</i>
   </p>
 </div>
+
+The map displays the boundary polygons for each of the listed projects. Users can pan, zoom, and measure acreage using the map tools, as well as select the year and product type of the satellite imagery to display.
 
 False Color and NDVI imagery products provide land-cover visualizations which highlight vegetation, making it easier to observe the presense of trees.
 
