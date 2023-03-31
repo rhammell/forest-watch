@@ -22,6 +22,7 @@ const Results = ({ projects, selectedId, handleSelect, total, page, pageSize, ha
         <VStack
           h={'100%'}
           spacing={2}
+          pb={2}
         >
           {projects.map(project => <Project project={project} key={project.Id} selectedId={selectedId} handleSelect={handleSelect}/>)}
         </VStack>

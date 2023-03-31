@@ -97,7 +97,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
     // Create map - store reference
     const map = L.map(mapContainerRef.current, {
       center: [0, 0],
-      zoom: 3,
+      zoom: 2,
       zoomControl: false,
       attributionControl: false,
       zoomSnap: 0.5

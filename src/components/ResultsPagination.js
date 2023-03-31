@@ -9,6 +9,9 @@ import {
 } from '@chakra-ui/react'
 
 const ResultsPagination = ({ projects, total, page, pageSize, handlePage }) => {
+  const maxPage = Math.floor(total / pageSize);
+  console.log(maxPage)
+
   return (
     <Flex
       borderTopColor={'gray.300'}
@@ -33,17 +36,19 @@ const ResultsPagination = ({ projects, total, page, pageSize, handlePage }) => {
       <Text
         fontSize={'sm'}
       >
-        {1 + pageSize * page} - {pageSize * page + projects.length} of {total.toString()} Projects
+        {1 + pageSize * page} - {page == maxPage ? total : pageSize * (page + 1) } of {total.toString()} Projects
       </Text>
       <Box
         flex={1}
       >
-        <ChevronRightIcon
-          boxSize={5}
-          float={'left'}
-          onClick={() => handlePage(page + 1)}
-          cursor='pointer'
-        />
+        {page < maxPage &&
+          <ChevronRightIcon
+            boxSize={5}
+            float={'left'}
+            onClick={() => handlePage(page + 1)}
+            cursor='pointer'
+          />
+        }
       </Box>
     </Flex>
   );
