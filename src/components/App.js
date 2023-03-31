@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { FGStorage } from '@co2-storage/js-api'
-import { CID } from 'multiformats/cid'
 import Map from './Map'
 import Menu from './Menu'
 
@@ -66,7 +65,7 @@ function App() {
 
   useEffect(() => { 
     fetchProjects();
-  }, []);
+  }, [page]);
 
   return (
     <>
@@ -77,8 +76,9 @@ function App() {
         pageSize={pageSize} 
         isLoading={isLoading} 
         handleSelect={setSelectedId} 
-        selectedId={selectedId
-      }/>
+        selectedId={selectedId}
+        handlePage={setPage}
+      />
       <Map 
         projects={projects} 
         selectedId={selectedId}

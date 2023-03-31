@@ -91,7 +91,7 @@ Map controls are used to explore satellite imagery covering the project's territ
 ## CO2.Storage
 Carbon offset project data is stored on CO2.Storage in the form of assets.
 
-A ForestWatch CO2.Storage template provides the structured schema for these assets, defining the data fields that all assets of this type are required to have. An example of the ForestWatch template is available [here](). 
+A ForestWatch CO2.Storage template provides the structured schema for these assets, defining the data fields that all assets of this type are required to have. An example of the ForestWatch template is available [here](https://explore.ipld.io/#/explore/bafyreigr5mvb6g5sm2mbp3n6jgytbwcllmejc3puizylpzbmh2zbon7p2i). 
 
 Among other project specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the project's boundary, stored separately on IPFS.
 
@@ -122,6 +122,8 @@ npm run upload_assets
 ```
 
 This command utilizes the C02.Storage JS-API to programmatically add the Verra project data as assets on C02.Storage. The API upload process uses the CID of the ForestWatch template already created on C02.Storage to ensure that all assets include the required data fields.
+
+An example Verra asset can be viewed [here](https://explore.ipld.io/#/explore/bafyreihr4qhwiuoaab5rhwao5xjqtajffybdkypcuq7vruqzsdrp5v7nny).
 
 
 
