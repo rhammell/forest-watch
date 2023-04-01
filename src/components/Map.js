@@ -50,7 +50,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
 
   // Center map on map layer with offset
   const centerMap = (layer) => {
-    const bounds = layer.getBounds()//.pad(0.1)
+    const bounds = layer.getBounds().pad(0.1)
     mapRef.current.fitBounds(bounds, {
       paddingTopLeft: [menuOffset, 0],
       paddingBottomRight: [0, mapContainerRef.current.clientHeight - optionsRef.current.offsetTop]
