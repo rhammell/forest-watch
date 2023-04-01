@@ -64,7 +64,7 @@ The menu lists project data obtained from CO2.Storage. The app queries CO2.Stora
 
 <div align="center">
   <div>
-      <img src="img/interface.png" width="700">
+      <img src="img/forestwatch_ui.png" width="700">
   </div>
   <p>ForestWatch UI</p>
 </div>
