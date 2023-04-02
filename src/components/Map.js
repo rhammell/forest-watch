@@ -49,7 +49,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
 
   // Center map on map layer with offset
   const centerMap = (layer) => {
-    const bounds = layer.getBounds().pad(0.1)
+    const bounds = layer.getBounds().pad(0.05)
     mapRef.current.fitBounds(bounds, {
       paddingTopLeft: [menuOffset, 0],
       paddingBottomRight: [0, mapContainerRef.current.clientHeight - optionsRef.current.offsetTop]
@@ -66,7 +66,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
       tileSize: 512,
       attribution: '<a href="https://www.sentinel-hub.com/">Sentinel</a>',
       layers: layerName,
-      maxcc: 20,
+      maxcc: 50,
       time: layerTime,
       updateWhenIdle: true,
       updateWhenZooming: false,
