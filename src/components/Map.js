@@ -23,7 +23,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
   const currLayer = useRef(null);
   const groupRef = useRef(null);
   const [layerName, setLayerName] = useState('TRUE-COLOR-S2L2A');
-  const [layerTime, setLayerTime] = useState('2023-01-01/2023-12-31')
+  const [layerTime, setLayerTime] = useState('2022-01-01/2022-12-31')
   const [showAlert, setShowAlert] = useState(false);
   const menuOffset = 560
 
@@ -49,7 +49,7 @@ const Map = ({ projects, selectedId, handleSelect }) => {
 
   // Center map on map layer with offset
   const centerMap = (layer) => {
-    const bounds = layer.getBounds().pad(0.05)
+    const bounds = layer.getBounds()//.pad(0.1)
     mapRef.current.fitBounds(bounds, {
       paddingTopLeft: [menuOffset, 0],
       paddingBottomRight: [0, mapContainerRef.current.clientHeight - optionsRef.current.offsetTop]
