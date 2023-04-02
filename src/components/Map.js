@@ -13,7 +13,7 @@ import 'leaflet/dist/leaflet.js';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-measure/dist/leaflet-measure.css';
 import 'leaflet-measure/dist/leaflet-measure.js';
-import '../js/leaflet-tilelayer-wmts-src.js'
+
 
 const Map = ({ projects, selectedId, handleSelect }) => {
   const mapRef = useRef(null);
@@ -25,7 +25,6 @@ const Map = ({ projects, selectedId, handleSelect }) => {
   const [layerName, setLayerName] = useState('TRUE-COLOR-S2L2A');
   const [layerTime, setLayerTime] = useState('2023-01-01/2023-12-31')
   const [showAlert, setShowAlert] = useState(false);
-  const minZoom = 7;
   const menuOffset = 560
 
   // Define layer name options
@@ -60,23 +59,23 @@ const Map = ({ projects, selectedId, handleSelect }) => {
   // Add selected tile layer and delete previous layer
   const addLayer = () => {
 
-    // Define WMTS layer with selected display options
+    // Define tile layer with selected display options
     const sentinelHubKey = process.env.REACT_APP_SENTINEL_HUB_KEY
-    const baseUrl = `https://services.sentinel-hub.com/ogc/wmts/${sentinelHubKey}`
-    const wmts = L.tileLayer.wmts(baseUrl, {
+    const baseUrl = `https://services.sentinel-hub.com/ogc/wms/${sentinelHubKey}`
+    const tileLayer = L.tileLayer.wms(baseUrl, {
+      tileSize: 512,
       attribution: '<a href="https://www.sentinel-hub.com/">Sentinel</a>',
-      layer: layerName,
-      tilematrixSet: "PopularWebMercator512",
-      format: "image/jpeg",
+      layers: layerName,
       maxcc: 20,
       time: layerTime,
       updateWhenIdle: true,
-      updateWhenZooming: false
-    });
+      updateWhenZooming: false,
+      minZoom: 10
+   });
 
     // Track previous and current layer
     prevLayer.current = currLayer.current;
-    currLayer.current = wmts;
+    currLayer.current = tileLayer;
 
     // Add current layer to map
     mapRef.current.addLayer(currLayer.current);
@@ -96,11 +95,11 @@ const Map = ({ projects, selectedId, handleSelect }) => {
 
     // Create map - store reference
     const map = L.map(mapContainerRef.current, {
-      center: [0, 0],
+      center: [0, -60],
       zoom: 2,
       zoomControl: false,
       attributionControl: false,
-      zoomSnap: 0.5
+      //zoomSnap: 0.1
     });
     mapRef.current = map;
 
@@ -145,13 +144,14 @@ const Map = ({ projects, selectedId, handleSelect }) => {
     map.on('zoomend', (e) => {
       // Show alert based on zoom level
       var currZoom = map.getZoom();
+      console.log(currZoom)
       //setShowAlert(currZoom < minZoom);
     })
   }, []);
 
   // Tile layer options change effect
   useEffect(() => {
-    //addLayer();
+    addLayer();
   }, [layerName, layerTime])
 
   // Effect called each time products are updated
