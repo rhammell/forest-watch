@@ -5,9 +5,9 @@ The app displays the details and geographic boundaries of various reforestation 
 
 Users are able to verify whether a project's offset goals are being achieved by observing changes to the tree coverage occurring inside the project's boundaries.
 
-Project data is stored on [CO2.Storage](https://co2.storage/) as assets that follow a ForestWatch template.
+Readd a full project overview [here](https://devpost.com/software/forestwatch). 
 
-## Demo
+## Demo Video
 [![Forset Watch](http://img.youtube.com/vi/IdJaMZ59OuM/0.jpg)](https://youtu.be/IdJaMZ59OuM "ForestWatch Demo")
 
 ## Setup
