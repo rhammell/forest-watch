@@ -8,7 +8,7 @@ Users are able to verify whether a project's offset goals are being achieved by 
 Readd a full project overview [here](https://devpost.com/software/forestwatch). 
 
 ## Demo Video
-[![Forset Watch](http://img.youtube.com/vi/IdJaMZ59OuM/0.jpg)](https://youtu.be/IdJaMZ59OuM "ForestWatch Demo")
+[![Forset Watch](http://img.youtube.com/vi/IdJaMZ59OuM/500.jpg)](https://youtu.be/IdJaMZ59OuM "ForestWatch Demo")
 
 ## Setup
 Node.js is required to run this application. 
