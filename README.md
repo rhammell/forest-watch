@@ -3,9 +3,9 @@ ForestWatch is a web app that allows users to monitor forest-related carbon offs
 
 The app displays the details and geographic boundaries of various reforestation projects within a map interface. Historical satellite imagery can be overlaid on the map to explore land-cover changes through time.
 
-Users are able to verify whether a project's offset goals are being achieved by observing changes to the tree coverage occurring inside the project's boundaries.
+Users can verify whether a project's offset goals are being achieved by observing changes to the tree coverage occurring inside the project's boundaries.
 
-Readd a full project overview [here](https://devpost.com/software/forestwatch). 
+Read a full project overview [here](https://devpost.com/software/forestwatch). 
 
 ## Demo Video
 [![Forset Watch](http://img.youtube.com/vi/IdJaMZ59OuM/0.jpg)](https://youtu.be/IdJaMZ59OuM "ForestWatch Demo")
@@ -28,7 +28,7 @@ npm install
 
 ## Configuration
 
-Developer specific settings are required for interacting with CO2.Storage, IPFS, and imagery providers. These settings must be defined as environment variables within an `.env` file in the root directory.
+Developer-specific settings are required for interacting with CO2.Storage, IPFS, and imagery providers. These settings must be defined as environment variables within an `.env` file in the root directory.
 
 Copy the included `.env.example` template file as `.env`: 
 
@@ -96,7 +96,7 @@ Carbon offset project data is stored on CO2.Storage in the form of assets.
 
 A ForestWatch CO2.Storage template provides the structured schema for these assets, defining the data fields that all assets of this type are required to have. An example of the ForestWatch template is available [here](https://explore.ipld.io/#/explore/bafyreigr5mvb6g5sm2mbp3n6jgytbwcllmejc3puizylpzbmh2zbon7p2i). 
 
-Among other project specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the project's boundary, stored separately on IPFS.
+Among other project-specific fields like name, description, and registry information, the template requires a `GeoCID` string value for each asset. This CID must reference the GeoJSON polygon for the project's boundary, stored separately on IPFS.
 
 Create a new version of this template on CO2.Storage with the following command: 
 
